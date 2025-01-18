@@ -1,0 +1,12 @@
+name = "deen24id/aoc2024"
+version = "0.1.0"
+description = "Using Luau to solve https://adventofcode.com/2024/ puzzles."
+authors = ["Imaduddin Haetami"]
+repository = "https://github.com/deen24id/adventofcode"
+license = "ISC"
+
+[target]
+environment = "lune"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"

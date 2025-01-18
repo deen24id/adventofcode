@@ -1,0 +1,3 @@
+name = "deen24id/aoc2024"
+version = "0.1.0"
+target = "lune"
