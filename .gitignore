@@ -5,3 +5,6 @@
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/vcs.xml
+
+#exclude 2024 puzzle inputs
+2024/input/
