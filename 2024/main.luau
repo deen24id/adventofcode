@@ -11,5 +11,3 @@ if response.ok then
 else
 	print("Google is down!! What?!?")
 end
-
-aaasa
