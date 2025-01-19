@@ -2,7 +2,7 @@ local LINE_SEPARATOR = "\r\n" -- Using windows
 
 local fs = require("@lune/fs")
 
-local input = fs.readFile("./input/Day01-input.txt")
+local input = fs.readFile("./input/01-input.txt")
 
 local array1 = {}
 local array2 = {}
