@@ -1,9 +1,8 @@
 package Day01;
 
-import java.nio.file.Path;
-import java.util.*;
+import utils.Fetch;
 
-import utils.Import;
+import java.util.*;
 
 public class Part2 {
 
@@ -52,8 +51,7 @@ public class Part2 {
 
     public static void main(String[] args) {
 
-        String filePath = Path.of("asset/day-01/input.txt").toString();
-        List<String> input = Import.readAsList(filePath);
+        List<String> input = Fetch.inputAsList(1, false);
 
         int count = 0;
 

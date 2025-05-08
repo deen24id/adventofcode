@@ -16,7 +16,7 @@ public class Fetch {
 
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://adventofcode.com/2023/day/"+day+(sample?"":"/input")))
-                .header("Cookie","session=53616c7465645f5f4a0f84652f92b1ff0e6c3b736ffd30da71fbc3f96358d4b76487f467fd1634267da97d438816fcfbbc65c6ef4b0b6dff27c1951c8f18aacb")
+                .header("Cookie","session=YOUR-OWN-BROWSER-COOKIE")
                 .method("GET", HttpRequest.BodyPublishers.noBody())
                 .build();
 

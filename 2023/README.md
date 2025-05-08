@@ -11,3 +11,6 @@ Though it is done in 2024, here is my stats for AOC2023:
 | 3   | >24h       | 154907 | 0     | >24h       | 134132 | 0     |
 | 2   | >24h       | 212460 | 0     | >24h       | 202584 | 0     |
 | 1   | >24h       | 313374 | 0     | -          | -      | -     |
+
+To reproduce, don't forget to add your own browser request cookie for the fetch to function.
+It is located in `utils.Fetch` class.
