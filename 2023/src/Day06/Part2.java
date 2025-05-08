@@ -1,16 +1,15 @@
 package Day06;
 
-import utils.ImportUtils;
+import utils.Fetch;
 
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Part2 {
     public static void main(String[] args) {
-        String filePath = Path.of("asset/day-06/input.txt").toString();
-        List<String> input = ImportUtils.readAsList(filePath);
+
+        List<String> input = Fetch.inputAsList(6, false);
 
         List<String> timesTemp = new ArrayList<>(Arrays.stream(input.getFirst().split("\\s+")).toList());
         timesTemp.removeFirst();

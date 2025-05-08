@@ -1,17 +1,15 @@
 package Day03;
 
-import utils.ImportUtils;
-
-import java.nio.file.Path;
-import java.util.List;
-
+import utils.Fetch;
 import static Day03.Utils.coordsCheck;
+
+import java.util.List;
 
 public class Part1 {
 
     public static void main(String[] args) {
-        String filePath = Path.of("asset/day-03/input.txt").toString();
-        char[][] input = ImportUtils.readCharTable(filePath);
+
+        char[][] input = Fetch.inputAsChar2D(3,false);
 
         int count = 0;
 

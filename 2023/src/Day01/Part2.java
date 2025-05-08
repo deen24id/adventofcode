@@ -3,7 +3,7 @@ package Day01;
 import java.nio.file.Path;
 import java.util.*;
 
-import utils.ImportUtils;
+import utils.Import;
 
 public class Part2 {
 
@@ -53,7 +53,7 @@ public class Part2 {
     public static void main(String[] args) {
 
         String filePath = Path.of("asset/day-01/input.txt").toString();
-        List<String> input = ImportUtils.readAsList(filePath);
+        List<String> input = Import.readAsList(filePath);
 
         int count = 0;
 

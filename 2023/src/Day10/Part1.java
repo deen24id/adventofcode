@@ -1,8 +1,7 @@
 package Day10;
 
-import utils.ImportUtils;
+import utils.Fetch;
 
-import java.nio.file.Path;
 import java.util.*;
 
 record Coord(int x, int y) {
@@ -10,8 +9,7 @@ record Coord(int x, int y) {
 
 public class Part1 {
     public static void main(String[] args) {
-        String filePath = Path.of("asset/day-10/input.txt").toString();
-        char[][] input = ImportUtils.readCharTable(filePath);
+        char[][] input = Fetch.inputAsChar2D(10, false);
 
         Coord startCoord = null;
         Map<Coord, Map<Coord, Coord>> nextMap = new HashMap<>();

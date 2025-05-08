@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ImportUtils {
+public class Import {
     public static String readAsPlainString(String filePath) {
         try {
             return new String(Files.readAllBytes(Paths.get(filePath)));

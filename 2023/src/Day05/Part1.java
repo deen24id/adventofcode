@@ -1,8 +1,7 @@
 package Day05;
 
-import utils.ImportUtils;
+import utils.Fetch;
 
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -10,8 +9,8 @@ import java.util.List;
 public class Part1 {
 
     public static void main(String[] args) {
-        String filePath = Path.of("asset/day-05/input.txt").toString();
-        List<String> input = ImportUtils.readAsList(filePath);
+
+        List<String> input = Fetch.inputAsList(5, false);
 
         List<Long> seeds = new ArrayList<>(Arrays
                 .stream(input.getFirst()

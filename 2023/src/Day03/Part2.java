@@ -1,19 +1,17 @@
 package Day03;
 
-import utils.ImportUtils;
-
-import java.nio.file.Path;
-import java.util.*;
-
+import utils.Fetch;
 import static Day03.Utils.coordsCheck;
+
+import java.util.*;
 
 record Info(int value, int id) {
 }
 
 public class Part2 {
     public static void main(String[] args) {
-        String filePath = Path.of("asset/day-03/input.txt").toString();
-        char[][] input = ImportUtils.readCharTable(filePath);
+
+        char[][] input = Fetch.inputAsChar2D(3,false);
 
         Map<Coord, Info> data = new HashMap<>();
         int id = 1;

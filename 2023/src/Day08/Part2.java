@@ -1,6 +1,7 @@
 package Day08;
 
-import utils.ImportUtils;
+import utils.Fetch;
+import utils.Import;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -11,8 +12,8 @@ import java.util.Map;
 
 public class Part2 {
     public static void main(String[] args) {
-        String filePath = Path.of("asset/day-08/input.txt").toString();
-        List<String> input = ImportUtils.readAsList(filePath);
+
+        List<String> input = Fetch.inputAsList(8, false);
 
         Map<String, Pair> next = new HashMap<>();
         for (int i = 2; i < input.size(); i++) {

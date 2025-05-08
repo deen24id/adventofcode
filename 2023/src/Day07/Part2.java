@@ -1,8 +1,7 @@
 package Day07;
 
-import utils.ImportUtils;
+import utils.Fetch;
 
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -13,9 +12,9 @@ import static Day07.Utils.areCardsStronger;
 
 public class Part2 {
 
-    public static void main() {
-        String filePath = Path.of("asset/day-07/input.txt").toString();
-        List<String> input = ImportUtils.readAsList(filePath);
+    public static void main(String[] args) {
+
+        List<String> input = Fetch.inputAsList(7, false);
 
         List<String> cards = new ArrayList<>();
         Map<String, Integer> bids = new HashMap<>();
